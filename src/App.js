@@ -4,6 +4,8 @@ import { Button } from "react-bootstrap";
 import MovieList from "./Components/MovieList";
 import { movies } from "./movies";
 import AddMovieModal from "./Components/AddMovieModal";
+import { Link, Route, Switch } from "react-router-dom";
+import Movie from "./Pages/Movie";
 
 function App() {
   const [data, setData] = useState(movies);
@@ -42,8 +44,14 @@ function App() {
       <Button className="mr-3" onClick={clearFilters}>
         Clear Filter
       </Button>
+
+      <Link to="/movie">Movie</Link>
+
       <span className="m-auto">{range}</span>
       <MovieList data={filteredMovies} />
+      <Switch>
+        <Route exact={true} path="/movie" component={Movie} />
+      </Switch>
     </div>
   );
 }
