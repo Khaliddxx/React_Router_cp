@@ -5,6 +5,7 @@ export const movies = [
     posterURL:
       "https://www.joblo.com/assets/images/joblo/posters/2021/06/rsz_paw_patrol_the_movie_poster.jpg",
     rating: 7,
+    trailerLink: "https://www.youtube.com/watch?v=LRMTr2VZcr8",
   },
   {
     title: "Shang-Chi",
@@ -12,6 +13,7 @@ export const movies = [
     posterURL:
       "https://www.joblo.com/assets/images/joblo/posters/2021/06/Shang-Chi-poster-4062076.jpg",
     rating: 8,
+    trailerLink: "https://www.youtube.com/watch?v=8YjFbMbfXaQ",
   },
   {
     title: "Army of The Dead",
@@ -20,6 +22,7 @@ export const movies = [
     posterURL:
       "https://www.joblo.com/assets/images/joblo/posters/2021/04/army-of-the-dead-poster.jpg",
     rating: 7,
+    trailerLink: "https://www.youtube.com/watch?v=tI1JGPhYBS8",
   },
   {
     title: "Concrete Cowboy",
@@ -27,6 +30,7 @@ export const movies = [
     posterURL:
       "https://www.joblo.com/assets/images/joblo/posters/2021/03/concrete-cowboy-poster-netflix-idris-elba.jpg",
     rating: 8,
+    trailerLink: "https://www.youtube.com/watch?v=WZ3dgHqaw8U",
   },
   {
     title: "Voyagers",
@@ -34,5 +38,6 @@ export const movies = [
     posterURL:
       "https://www.joblo.com/assets/images/joblo/posters/2021/03/voyagers-151251.jpg",
     rating: 9,
+    trailerLink: "https://www.youtube.com/watch?v=EwJkexUBSeg",
   },
 ];

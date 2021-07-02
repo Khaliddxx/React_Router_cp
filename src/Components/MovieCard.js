@@ -13,6 +13,7 @@ const MovieCard = (props) => {
   return (
     <>
       <div
+        onClick={() => alert("clicked!")}
         class="card"
         style={{
           width: "14rem",
@@ -22,6 +23,7 @@ const MovieCard = (props) => {
           borderRadius: "10px",
           marginBottom: "5px",
           overflow: "hidden",
+          cursor: "pointer",
         }}
       >
         <img class="card-img-top" src={data.posterURL} alt="Card image cap" />
