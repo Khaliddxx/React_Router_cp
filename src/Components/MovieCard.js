@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const MovieCard = (props) => {
   const [data, setData] = useState({
@@ -13,7 +14,6 @@ const MovieCard = (props) => {
   return (
     <>
       <div
-        onClick={() => alert("clicked!")}
         class="card"
         style={{
           width: "14rem",
@@ -26,15 +26,20 @@ const MovieCard = (props) => {
           cursor: "pointer",
         }}
       >
-        <img class="card-img-top" src={data.posterURL} alt="Card image cap" />
-        <div class="card-body">
-          <h5 class="card-title">{data.title}</h5>
-          <p class="card-text">{data.description}</p>
-        </div>
-        <span className="card-footer" style={{ textAlign: "right" }}>
-          <i class="fas fa-star-half-alt"></i>
-          {data.rating}/10
-        </span>
+        <Link
+          to="/movie"
+          style={{ color: "inherit", textDecoration: "inherit" }}
+        >
+          <img class="card-img-top" src={data.posterURL} alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">{data.title}</h5>
+            <p class="card-text">{data.description}</p>
+          </div>
+          <span className="card-footer" style={{ textAlign: "right" }}>
+            <i class="fas fa-star-half-alt"></i>
+            {data.rating}/10
+          </span>
+        </Link>
       </div>
     </>
   );
